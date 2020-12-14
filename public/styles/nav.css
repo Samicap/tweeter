@@ -1,0 +1,25 @@
+nav {
+  display: flex;
+  height: 120px;
+  width: 100pw;
+  color: #FFFFFF;
+  background-color: #4056A1;
+
+
+}
+
+span {
+  display: flex;
+  align-self: flex-start;
+  font-family: 'Bungee', sans-serif;
+  margin: 1.5em;
+
+}
+
+a.compose {
+  display: flex;
+  align-self: flex-end;
+  color: #FFFFFF;
+  font-family: 'Sans Source Pro', sans-serif;
+  margin: 1.5em;
+}
