@@ -4,6 +4,8 @@ nav {
   width: 100pw;
   color: #FFFFFF;
   background-color: #4056A1;
+  flex-direction: row;
+  justify-content: space-between;
 
 
 }
