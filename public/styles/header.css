@@ -1,7 +1,14 @@
 header {
   display: flex;
+  height: 400px;
+  width: 100pw;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: bisque;
+}
+
+Your-Name {
+  display: flex;
+
 }
