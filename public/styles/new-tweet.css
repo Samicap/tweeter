@@ -5,8 +5,17 @@
 }
 
 .tweet-input {
+  font-family: 'Source Sans Pro 700', sans-serif;
   background-color: #f4f1ec;
   border-bottom: solid;
+}
+
+#tweet-text {
+  border: 0;
+  outline: none;
+  width: 100%;
+  overflow: auto;
+  resize: none;
 }
 
 .below-tweet-input {
@@ -17,11 +26,8 @@
 }
 
 .tweet-button {
-  background-color: cornflowerblue;
+  background-color: #4056A1;
   color: #FFFFFF;
+  justify-content: space-around;
 }
 
-.counter {
- 
-
-}
