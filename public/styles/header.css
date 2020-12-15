@@ -5,7 +5,8 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: bisque;
+  background: url('../images/asfalt-light-background-texture.png');
+  background-color: rgb(243, 144, 22);
 }
 
 .your-name {
