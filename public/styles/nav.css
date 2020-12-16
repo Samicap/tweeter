@@ -24,14 +24,19 @@ span {
 .composeTweet {
   display: flex;
   flex-direction: column;
-  align-self: flex-end;
-  color: #FFFFFF;
+  justify-content: center;
+  vertical-align: middle;
+  color: #ffffff;
   font-family: 'Sans Source Pro', sans-serif;
   margin: 1.5em;
 }
 
-.arrowIcon {
-  width: 50px;
-  height: 50px;
-  
+.arrow-container {
+  text-align: center;
+}
+
+.arrow-icon {
+  width: 20px;
+  height: 20px;
+  color: rgb(236, 24, 24);
 }
