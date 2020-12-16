@@ -1,0 +1,24 @@
+.tweet-container {
+  color: greenyellow;
+  border: 5px;
+  border-color: rgb(53, 52, 52);
+  border-style: solid;
+  background-color: #f4f1ec;
+  height: 200px;
+  display: flex;
+}
+
+.tweet-header {
+  height: 100px;
+  background-color: inherit;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: solid;
+  border-width: 100%;
+  border-color: rgb(53, 52, 52);
+}
+
+.tweet-footer {
+  height: 50px;
+  background-color: inherit;
+}
