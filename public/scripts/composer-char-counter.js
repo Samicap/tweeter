@@ -1,12 +1,17 @@
 $(document).ready(function() {
   
-    $(".new-tweet .tweet-input textarea").on('input', function(){
-      const tweetCharLength = $("#tweet-text").val(); //strings
-      const tweetLength = tweetCharLength.length;
-      const charRemaining = 140 - tweetLength;
-      console.log(charRemaining)
-    })
+    $("#tweet-text").on('keyup', function(){
+      const charRemaining = 140 - $(this).val().length; //string
 
-    // $("counter")
+      const tweetChar = $(".counter").val(charRemaining).val();
+      
+      if (tweetChar < 0) {
+        $(".counter").css('color', "red");
+        console.log("hi") 
+      } else {
+       $(".counter").css('color', "grey");
+      
+    }
+})
 });
 
