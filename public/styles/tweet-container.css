@@ -41,8 +41,11 @@
 .username {
   line-height: 72px;
   font-size: 36px;
-  display: none;
-  display: block;
+  opacity: 0;
+}
+
+.tweet-container:hover .username{
+  opacity: 1;
 }
 
 .fas-fa-air-freshener {
