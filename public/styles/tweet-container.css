@@ -1,56 +1,69 @@
 .tweet-container {
+  
+}
+
+.tweet {
+  width: 100%;
   color: grey;
   border: 5px;
   border-color: rgb(53, 52, 52);
   border-style: solid;
   background-color: #f4f1ec;
-  height: 200px;
-}
-
-.article-tweet {
-  width: 100%;
-
+  margin-bottom: 30px;
+  padding: 15px 20px;
 }
 
 .tweet-header {
   height: 120px;
   background-color: inherit;
+}
+
+.tweet-body {
+  border-width: 3px;
   border-bottom: solid;
-  border-width: 100%;
   border-color: rgb(53, 52, 52);
-
-
+  margin: 0 auto;
+  padding: 15px;
 }
 
-.tweet-userID {
+.user-info {
   display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
-  align-items: baseline;
+  width: 100%;
+  justify-content: space-between;
 }
+
+.avatar {
+  margin-right: 20px;
+}
+
+.avatar-name {
+  width: 50%;
+  display: flex;
+}
+
+.username {
+  line-height: 72px;
+  font-size: 36px;
+  display: none;
+  display: block;
+}
+
 .fas-fa-air-freshener {
   align-self: flex-start;
-
-}
-
-.atUser {
-  color: lightblue;
-  flex-direction: column;
-
-  justify-content: flex-end;
-  
 }
 
 .tweet-footer {
-  height: 50px;
-  background-color: inherit;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: baseline;
+  padding: 15px;
+  display: flex;
 }
 
-.span-tweet {
-  flex-direction: row;
+.footer-left {
+  width: 50%;
+}
+
+.footer-right {
+  width: 50%;
+  text-align: right;
 }
 
 .tweet-container:hover {
