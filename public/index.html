@@ -37,9 +37,11 @@
           <span>tweeter</span>
         </div>
         <div class="composeTweet">
-          <a href="#"><b>Write </b>  a new Tweet</a>
           <div>
-            <img class="arrowIcon" src="/images/icon2arrows.svg">
+            <b>Write </b>  a new Tweet
+          </div>
+          <div class="arrow-container">
+            <img class="arrow-icon" src="/images/icon2arrows.svg">
           </div>
         </div>
       </nav>
@@ -73,28 +75,30 @@
       </section>
       <br>
       <section class="tweet-container">
-        <article class="article-tweet">
+        <article class="tweet">
           <header class="tweet-header">
-            <div>
-              <div class="tweet-userID">
-                <i class="fas fa-air-freshener"></i>
-                <p>User ID name</p>
-                <div class="atUser">
-                <p>@User</p>
+            <div class="user-info">
+              <div class="avatar-name">
+                <div class="avatar">
+                  <i class="fas fa-air-freshener fa-3x"></i>
                 </div>
+                <p>User Name</p>
               </div>
-              <div>
-                <%= tweets %>
+              <div class="username">
+                @User
               </div>
             </div>
           </header>
+          <div class="tweet-body">
+            This is the tweet text
+          </div>
           <footer class="tweet-footer">
-            <div>10 days ago</div>
-              <span class="span-tweet">
-                <i class="fas fa-flag"></i>
-                <i class="fas fa-retweet"></i>
-                <i class="fas fa-heart"></i>
-              </span>
+            <div class="footer-left">10 Days ago</div>
+            <div class="footer-right">
+              <i class="fas fa-flag"></i>
+              <i class="fas fa-retweet"></i>
+              <i class="fas fa-heart"></i>
+            </div>  
           </footer>
         </article>
       </section>
