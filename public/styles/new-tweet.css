@@ -1,4 +1,4 @@
-.new-tweet {
+.new-tweet {  
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -16,6 +16,7 @@
   width: 100%;
   overflow: auto;
   resize: none;
+  background-color: #f4f1ec;
 }
 
 .below-tweet-input {
@@ -30,4 +31,6 @@
   color: #FFFFFF;
   justify-content: space-around;
 }
+
+
 

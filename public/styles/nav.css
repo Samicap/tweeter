@@ -1,7 +1,6 @@
 nav {
   display: flex;
   height: 120px;
-  width: 100pw;
   color: #FFFFFF;
   background-color: #4056A1;
   flex-direction: row;
@@ -12,6 +11,7 @@ nav {
 
 span {
   display: flex;
+  align-items: baseline;
   align-self: flex-start;
   font-family: 'Bungee', sans-serif;
   margin: 1.5em;
@@ -20,6 +20,7 @@ span {
 
 .composeTweet {
   display: flex;
+  flex-direction: column;
   align-self: flex-end;
   color: #FFFFFF;
   font-family: 'Sans Source Pro', sans-serif;
@@ -29,4 +30,5 @@ span {
 .arrowIcon {
   width: 50px;
   height: 50px;
+  
 }
