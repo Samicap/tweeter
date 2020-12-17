@@ -45,12 +45,8 @@
   opacity: 0;
 }
 
-.tweet-container:hover .username{
+.tweet:hover .username{
   opacity: 1;
-}
-
-.fas-fa-air-freshener {
-  align-self: flex-start;
 }
 
 .tweet-footer {
@@ -67,7 +63,7 @@
   text-align: right;
 }
 
-.tweet-container:hover {
-  box-shadow: 10px 5px 5px red;
+.tweet:hover {
+  box-shadow: 10px 5px 5px #598bf7;
    
 }
