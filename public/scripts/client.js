@@ -29,15 +29,7 @@ const data = [
 ]
 
 $(document).ready(function(){
-  
-  
-  
-  console.log("document ready");
-  // const $tweet = createTweetElement(tweetData);
-  
-  
-  // console.log($tweet); 
-  // $('#tweets-container').append($tweet);
+
   renderTweets(data)
 });
 
@@ -50,8 +42,7 @@ const renderTweets = function(tweets) {
 
 
 const createTweetElement = function(tweet){
-  console.log(tweet.user.name);
-  console.log(`Name: ${tweet.user.name}`);
+
   const tweetElement = `
   <article class="tweet">
           <header class="tweet-header">
