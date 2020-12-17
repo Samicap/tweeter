@@ -30,8 +30,34 @@ const data = [
 
 $(document).ready(function(){
 
-  renderTweets(data)
+  renderTweets(data);
+
+  const $form = $(".new-tweet");
+
+  $form.on("submit", submitTweet)
+
+
 });
+
+
+
+const submitTweet = function(event) {
+  event.preventDefault();
+  console.log($(this).serialize());
+  const formData = $(this).serialize();
+  $.ajax("/tweets/", { method: "POST", data: formData })
+    .then((response) => {
+      getAndRenderTweets()
+    })
+
+};
+
+const getAndRenderTweets = function() {
+  $.ajax("/tweets/", {method: "GET"})
+    .then((response) => {
+      renderTweets(response);
+    });
+}
 
 const renderTweets = function(tweets) {
   for (tweet of tweets) {
