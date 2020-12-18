@@ -10,9 +10,11 @@ const onKeyUp = function () {
 
   if (tweetChar < 0) {
     $(".counter").css('color', "red");
-    console.log("hi");
   } else {
     $(".counter").css('color', "grey");
-
   }
 };
+
+
+
+
