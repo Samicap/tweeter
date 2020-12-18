@@ -22,6 +22,7 @@
   border-color: #353434;
   margin: 0 auto;
   padding: 15px;
+  word-wrap: break-word;
 }
 
 .user-info {
