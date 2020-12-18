@@ -5,37 +5,52 @@
 */
 
 
-$(document).ready(function(){
+$(document).ready(function () {
 
   getAndRenderTweets(); // needs to have the array response from the server
 
   const $form = $(".new-tweet");
 
-  $form.on("submit", submitTweet)
+  $form.on("submit", submitTweet);
 
 
 });
 
+const alertTweetInput = function () {
 
-
-const submitTweet = function(event) {
-  event.preventDefault();
-  console.log($(this).serialize());
-  const formData = $(this).serialize();
-  $.ajax("/tweets/", { method: "POST", data: formData })
-    .then((response) => {
-      getAndRenderTweets()
-    })
+  const counter = $(".counter").val();
+  if ($("#tweet-text").val() === "") {
+    return "Write Something!";
+  } else if ($(".counter").val() < 0) {
+    return "Tweet is too long!";
+  }
+  return null;
 };
 
-const getAndRenderTweets = function() {
-  $.ajax("/tweets/", {method: "GET"})
+
+const submitTweet = function (event) {
+  event.preventDefault();
+  const alertMessage = alertTweetInput();
+  if (alertMessage !== null) {
+    alert(alertMessage);
+  } else {
+    const formData = $(this).serialize();
+    $.ajax("/tweets/", { method: "POST", data: formData })
+      .then((response) => {
+        getAndRenderTweets();
+      });
+  };
+
+};
+
+const getAndRenderTweets = function () {
+  $.ajax("/tweets/", { method: "GET" })
     .then((response) => {
       renderTweets(response);
     });
-}
+};
 
-const renderTweets = function(tweets) {
+const renderTweets = function (tweets) {
   for (tweet of tweets) {
     const tweetElement = createTweetElement(tweet);
     $("#tweet-container").prepend(tweetElement);
@@ -43,7 +58,7 @@ const renderTweets = function(tweets) {
 };
 
 
-const createTweetElement = function(tweet){
+const createTweetElement = function (tweet) {
 
   const tweetElement = `
   <article class="tweet">
@@ -74,7 +89,6 @@ const createTweetElement = function(tweet){
         </article>
   `;
   return $(tweetElement);
-  };
+};
 
 
-  
