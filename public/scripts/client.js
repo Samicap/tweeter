@@ -16,6 +16,12 @@ $(document).ready(function () {
 
 });
 
+const escape =  function(str) {
+  let div = document.createElement('div');
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+}
+
 const alertTweetInput = function () {
 
   const counter = $(".counter").val();
@@ -76,7 +82,7 @@ const createTweetElement = function (tweet) {
             </div>
           </header>
           <div class="tweet-body">
-            ${tweet.content.text}
+            ${escape(tweet.content.text)}
           </div>
           <footer class="tweet-footer">
             <div class="footer-left">10 Days ago</div>
