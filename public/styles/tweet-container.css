@@ -68,3 +68,11 @@
   box-shadow: 10px 5px 5px #598bf7;
    
 }
+
+#error {
+  color: #ff0000;
+  border-color: #ff0000;
+  border: 1px;
+  border-style: solid;
+  margin-top: 5px;
+}
