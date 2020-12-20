@@ -44,6 +44,10 @@ body {
     background: url('../images/asfalt-light-background-texture.png');
     background-color: #f39016;
    }
+
+   .new-tweet {
+     margin-top: 1em;
+   }
  }
 
  @media all and (min-width: 1024px) {
