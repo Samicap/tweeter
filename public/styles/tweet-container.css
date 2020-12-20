@@ -51,7 +51,7 @@
 }
 
 .tweet:hover .username{
-  opacity: 1;
+  opacity: .5;
 }
 
 .tweet-footer {
