@@ -58,6 +58,7 @@ body {
     width: 100%;
     background-color: #4056A1;
     display: flex;
+    margin-bottom: 2em;
     
   }
   
@@ -65,6 +66,7 @@ body {
     display: flex;
     width: 33.3%;
     justify-content: flex-start;
+    margin-right: 3em;
  
 
    }
@@ -72,9 +74,7 @@ body {
    .new-tweet-input-container {
      display: flex;
      flex-direction: column;
-     width: 34%;
-
-
+     width: 40%;
 
    }
  }
