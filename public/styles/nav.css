@@ -17,7 +17,10 @@
   align-self: flex-start;
   font-family: 'Bungee', sans-serif;
   margin: 1.5em;
+}
 
+.tweeter {
+  margin-left: 1em;
 }
 
 .composeTweet {
