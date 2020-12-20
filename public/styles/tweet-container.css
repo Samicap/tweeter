@@ -29,6 +29,8 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+  line-height: 72px;
+  
 }
 
 .avatar {
@@ -41,9 +43,11 @@
 }
 
 .username {
+  color: #629fe6;
   line-height: 72px;
-  font-size: 36px;
+  font-size: 1em;
   opacity: 0;
+  
 }
 
 .tweet:hover .username{
@@ -70,9 +74,14 @@
 }
 
 #error {
+  text-align: row;
+  font-family: 'Source Sans Pro', sans-serif;
   color: #ff0000;
   border-color: #ff0000;
   border: 1px;
   border-style: solid;
   margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  
 }
