@@ -47,7 +47,34 @@ body {
  }
 
  @media all and (min-width: 1024px) {
+
+  body {
+    display: flex;
+    flex-flow: row wrap;
+
+  }
+
    .nav {
+    width: 100%;
     background-color: #4056A1;
+    display: flex;
+    
+  }
+  
+  .header {
+    display: flex;
+    width: 33.3%;
+    justify-content: flex-start;
+ 
+
+   }
+
+   .new-tweet-input-container {
+     display: flex;
+     flex-direction: column;
+     width: 34%;
+
+
+
    }
  }
