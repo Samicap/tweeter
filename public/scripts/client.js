@@ -10,48 +10,62 @@ $(document).ready(function () {
   getAndRenderTweets(); // needs to have the array response from the server
 
   const $form = $(".new-tweet");
-
   $form.on("submit", submitTweet);
-
-
+  $("#error").hide();
 });
 
-const escape =  function(str) {
+
+const escape = function (str) { // converts user input into a string inside <div> tags
   let div = document.createElement('div');
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
-}
+};
 
 const alertTweetInput = function () {
-
+ 
   const counter = $(".counter").val();
+  
   if ($("#tweet-text").val() === "") {
-    return "Write Something!";
-  } else if ($(".counter").val() < 0) {
-    return "Tweet is too long!";
+    return errorElement("Write Something!");
+  } else if (counter < 0) {
+    return errorElement("Tweet too Long!");
   }
   return null;
 };
+
+const errorElement = function(errorText) {
+  
+  const errorMessage = 
+    `
+      <i class="fas fa-exclamation-triangle"></i>
+      <span>${errorText}</span>
+      <i class="fas fa-exclamation-triangle"></i>
+    `
+  return $(errorMessage);
+}
 
 
 const submitTweet = function (event) {
   event.preventDefault();
   const alertMessage = alertTweetInput();
   if (alertMessage !== null) {
-    alert(alertMessage);
+    $("#error").html(alertMessage);
+    $("#error").slideDown();
   } else {
     const formData = $(this).serialize();
     $.ajax("/tweets/", { method: "POST", data: formData })
-      .then((response) => {
-        getAndRenderTweets();
-      });
+    .then((response) => {
+      $("#error").slideUp();
+      $("#tweet-text").val("");
+      $("#counter").val(140);
+      getAndRenderTweets();
+    });
   };
-
 };
 
 const getAndRenderTweets = function () {
   $.ajax("/tweets/", { method: "GET" })
-    .then((response) => {
+  .then((response) => {
       renderTweets(response);
     });
 };
