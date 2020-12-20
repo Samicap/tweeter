@@ -37,3 +37,17 @@ body {
   margin-left: 5%;
   margin-right: 5%;
  }
+
+ @media all and (max-width: 1024px) {
+
+   .nav {
+    background: url('../images/asfalt-light-background-texture.png');
+    background-color: #f39016;
+   }
+ }
+
+ @media all and (min-width: 1024px) {
+   .nav {
+    background-color: #4056A1;
+   }
+ }
