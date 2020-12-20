@@ -51,6 +51,7 @@ body {
   body {
     display: flex;
     flex-flow: row wrap;
+    margin-left: auto;
 
   }
 
@@ -64,17 +65,19 @@ body {
   
   .header {
     display: flex;
-    width: 33.3%;
+    width: 30%;
     justify-content: flex-start;
     margin-right: 3em;
- 
+    margin-left: 1em;
+    flex-grow: 1;
 
    }
 
    .new-tweet-input-container {
      display: flex;
      flex-direction: column;
-     width: 40%;
+     width: 50%;
+     flex-grow: 2;
 
    }
  }
