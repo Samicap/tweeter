@@ -24,6 +24,7 @@
 }
 
 .composeTweet {
+  font-size: .75em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,11 +35,8 @@
 }
 
 .arrow-container {
+  font: 2em;
   text-align: center;
   color: #f31616;
 }
 
-.arrow-icon {
-  width: 10px;
-  height: 10px;
-}
