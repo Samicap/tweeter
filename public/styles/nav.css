@@ -38,9 +38,10 @@
   font: 2em;
   text-align: center;
   color: #f31616;
+  margin-top: .25em;
   animation-iteration-count: infinite;
   animation-duration: 1s;
-  transform-origin: top;
+  transform-origin: bottom;
   animation-name: bounce;
   animation-timing-function: ease;
 }
@@ -48,7 +49,7 @@
 
 @keyframes bounce {
   0%   { transform: translateY(0); }
-  30%  { transform: translateY(-1px); }
+  30%  { transform: translateY(-4px); }
   50%  { transform: translateY(0); }
   100% { transform: translateY(0); }
 }
