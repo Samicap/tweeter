@@ -2,12 +2,15 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  font-family: 'Source Sans Pro 700', sans-serif;
+  font-size: .9em;
 }
 
 .tweet-input {
   font-family: 'Source Sans Pro 700', sans-serif;
   background-color: #f4f1ec;
   border-bottom: solid;
+  font-size: .85em;
 }
 
 #tweet-text {
