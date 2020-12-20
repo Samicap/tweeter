@@ -19,3 +19,7 @@ This repository is the starter code for the project: Students will fork and clon
 - Chance
 - md5
 
+
+## Screenshots
+![Screenshot of Tweeter on desktop view] (https://github.com/Samicap/tweeter/blob/master/docs/Tweeter-Desktop.png?raw=true)
+![Screenshot of Tweeter on tablet view] (https://github.com/Samicap/tweeter/blob/master/docs/Tweeter-Tablet.png?raw=true)
